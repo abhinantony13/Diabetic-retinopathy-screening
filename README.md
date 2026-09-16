@@ -1,16 +1,57 @@
-# React + Vite
+ # RETINEX – AI-Based Diabetic Retinopathy Pre-Screening
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+RETINEX is an AI-based explainable diabetic retinopathy pre-screening system designed to support early identification of possible diabetic eye complications.
 
-Currently, two official plugins are available:
+The system analyzes retinal fundus images and provides an AI-assisted screening result along with explainability information to help users understand which areas of the retinal image influenced the result.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> **Note:** RETINEX is a pre-screening/support tool and is not a replacement for examination or diagnosis by a qualified eye-care professional.
 
-## React Compiler
+## Problem Statement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Diabetic Retinopathy (DR) can cause vision loss if it is not detected and managed early. In many rural and underserved areas, access to specialized eye-care services can be limited.
 
-## Expanding the Oxlint configuration
+RETINEX aims to provide an accessible preliminary screening workflow using retinal fundus images and explainable AI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Proposed Solution
+
+RETINEX provides a simple workflow:
+
+1. Upload a retinal fundus image.
+2. Check the quality of the image.
+3. Perform AI-assisted diabetic retinopathy screening.
+4. Display the screening result.
+5. Provide explainability using a Grad-CAM attention map.
+6. Present the result in a simple and understandable interface.
+
+## Key Features
+
+- 🩺 Retinal fundus image upload
+- 🔍 Automated image-quality assessment
+- 🤖 AI-assisted diabetic retinopathy screening
+- 🧠 Explainable AI using Grad-CAM
+- 📊 Screening result visualization
+- 🌐 Web-based interface
+- 📱 Designed with accessibility and rural healthcare support in mind
+
+## Explainable AI
+
+RETINEX uses explainability techniques to provide a visual indication of the regions of the retinal image that contributed to the AI model's output.
+
+The Grad-CAM attention map helps make the model's prediction easier to interpret instead of presenting only a final classification.
+
+## System Workflow
+
+```text
+Retinal Fundus Image
+        ↓
+Image Quality Assessment
+        ↓
+Pre-processing
+        ↓
+AI Screening Model
+        ↓
+Diabetic Retinopathy Result
+        ↓
+Grad-CAM Explainability
+        ↓
+Screening Report
