@@ -2,6 +2,10 @@
 
 RETINEX is an AI-based explainable diabetic retinopathy pre-screening system designed to support early identification of possible diabetic eye complications.
 
+
+https://diabeticretinopathy-screening.vercel.app (for live demo......)
+
+
 The system analyzes retinal fundus images and provides an AI-assisted screening result along with explainability information to help users understand which areas of the retinal image influenced the result.
 
 > **Note:** RETINEX is a pre-screening/support tool and is not a replacement for examination or diagnosis by a qualified eye-care professional.
@@ -55,3 +59,4 @@ Diabetic Retinopathy Result
 Grad-CAM Explainability
         ↓
 Screening Report
+
